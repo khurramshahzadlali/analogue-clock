@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+
+p {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40px;
+    
+    font-weight: bold;
+    color: #ff7100;
+    text-shadow: 1px 1px 2px rgba(255,255,255, 0.7);
+    z-index: 2;
+}
+
+.clock {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 10px solid #c1ff00;
+    box-shadow:2px 2px 7px rgba(0,0,0, 0.7);
+    background-color: #f4ff00;
+}
+
+.numbers div {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff7100;
+    text-shadow: 1px 1px 2px rgba(255,255,255, 0.7);
+}
+.twelve {
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.six {
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.three {
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nine {
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.arrows {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: #c1ff00;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgba(0,0,0, 0.7);
+    z-index: 4;
+}
+.arrows div {
+    position: absolute;
+    background-color: ;
+    width: 7px;
+    height: 120px;
+    transform-origin: bottom center;
+    bottom: 50%;
+    z-index: 3;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 1px 1px 2px rgba(0,0,0, 0.7);
+}
+
+.arrows .hour {
+    height: 80px;
+    background-color: #c1ff00;
+}
+.arrows .minutes {
+    background-color: #c1ff00;
+}
+.arrows .seconds {
+    height: 125px;
+    width: 2px;
+    background-color: #ff7100;
+    rotate: 270deg;
+}
+
+
